@@ -1,0 +1,14 @@
+main {
+    padding-top: 200px;
+}
+
+.dropzone {
+    margin: 0 auto;
+    border: 3px dashed #247bbb;
+    height: 500px;
+    width: 1000px;
+}
+
+img {
+    max-width: 100%;
+}
