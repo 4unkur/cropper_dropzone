@@ -10,7 +10,7 @@ var dataURItoBlob = function (dataURI) {
 };
 
 Dropzone.autoDiscover = false;
-var storage = [], c = 0;
+var c = 0;
 
 var myDropzone = new Dropzone("#my-dropzone-container", {
     addRemoveLinks: true,
