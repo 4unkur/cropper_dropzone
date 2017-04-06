@@ -1420,22 +1420,6 @@
       }
     };
 
-    Dropzone.prototype.rearrangeFiles = function() {
-      var _i, _len, _ref = this.files, _cropped = [], _rest = [], file;
-      for (_i = 0, _len = _ref.length; _i < _len; _i++) {
-        file = _ref[_i];
-        if (file.status === Dropzone.QUEUED && file.cropped) {
-          _cropped.push(file);
-        } else {
-          _rest.push(file);
-        }
-      }
-
-      this.files = _cropped.concat(_rest);
-    };
-
-    return Dropzone;
-
   })(Emitter);
 
   Dropzone.version = "4.3.0";
