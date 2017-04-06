@@ -73,6 +73,13 @@ $('#my-dropzone-container').on('click', '.js-open-cropper-modal', function (e) {
                 var croppedFile = dataURItoBlob(blob);
                 croppedFile.name = fileName;
 
+                var files = myDropzone.getAcceptedFiles();
+                for (var i = 0; i < files.length; i++) {
+                    var file = files[i];
+                    if (file.name === fileName) {
+                        myDropzone.removeFile(file);
+                    }
+                }
                 myDropzone.addFile(croppedFile);
                 $this.modal('hide');
             })

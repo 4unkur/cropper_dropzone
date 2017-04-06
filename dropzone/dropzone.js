@@ -1420,6 +1420,8 @@
       }
     };
 
+    return Dropzone;
+
   })(Emitter);
 
   Dropzone.version = "4.3.0";
